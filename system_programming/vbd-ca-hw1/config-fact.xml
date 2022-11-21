@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<vbd>
+  <sched>
+    <policy>roundrobin</policy>
+    <timeslice>10</timeslice>
+  </sched>
+
+  <taskset>
+    <task>
+      <register>
+	    <sp>0x80000000</sp>
+	    <lr>0x88888888</lr>
+	    <pc>0x10518</pc>
+      </register>
+      <debug>
+	    <breakpoint>0x104cc</breakpoint>
+	    <watchpoint>0x96724</watchpoint>
+	    <watchsize>1</watchsize>
+      </debug>
+      <exefile>arm-exe/fact</exefile>
+      <cpumask>0x1</cpumask>
+    </task>
+  </taskset>
+
+</vbd>
+
+
